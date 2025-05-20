@@ -9,7 +9,7 @@ pinmux.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/pin.h
 pinmux.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/rom.h
 pinmux.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/rom_map.h
 pinmux.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/rom_patch.h
-pinmux.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/gpio.h
+pinmux.obj: ../gpio.h
 pinmux.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/prcm.h
 
 ../pinmux.c:
@@ -30,7 +30,7 @@ C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/rom_map.h:
 
 C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/rom_patch.h:
 
-C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/gpio.h:
+../gpio.h:
 
 C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/prcm.h:
 

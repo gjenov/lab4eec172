@@ -39,6 +39,25 @@ main.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/example/common/gpio_if.h
 main.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/example/common/common.h
 main.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/example/common/uart_if.h
 main.obj: ../utils/network_utils.h
+main.obj: C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdlib.h
+main.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/inc/hw_memmap.h
+main.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/inc/hw_common_reg.h
+main.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/inc/hw_timer.h
+main.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/timer.h
+main.obj: ../systick_if.h
+main.obj: C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/spi.h
+main.obj: ../gpio.h
+main.obj: C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdint.h
+main.obj: C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_stdint40.h
+main.obj: C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/stdint.h
+main.obj: C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h
+main.obj: C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h
+main.obj: ../Adafruit_GFX.h
+main.obj: ../Adafruit_SSD1351.h
+main.obj: ../glcdfont.h
+main.obj: ../oled_test.h
+main.obj: ../timer_if.h
+main.obj: C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h
 
 ../main.c:
 
@@ -117,4 +136,42 @@ C:/Users/standard/ti/ccs1250/cc3200-sdk/example/common/common.h:
 C:/Users/standard/ti/ccs1250/cc3200-sdk/example/common/uart_if.h:
 
 ../utils/network_utils.h:
+
+C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdlib.h:
+
+C:/Users/standard/ti/ccs1250/cc3200-sdk/inc/hw_memmap.h:
+
+C:/Users/standard/ti/ccs1250/cc3200-sdk/inc/hw_common_reg.h:
+
+C:/Users/standard/ti/ccs1250/cc3200-sdk/inc/hw_timer.h:
+
+C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/timer.h:
+
+../systick_if.h:
+
+C:/Users/standard/ti/ccs1250/cc3200-sdk/driverlib/spi.h:
+
+../gpio.h:
+
+C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdint.h:
+
+C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/_stdint40.h:
+
+C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/stdint.h:
+
+C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/machine/_stdint.h:
+
+C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/sys/_stdint.h:
+
+../Adafruit_GFX.h:
+
+../Adafruit_SSD1351.h:
+
+../glcdfont.h:
+
+../oled_test.h:
+
+../timer_if.h:
+
+C:/Users/standard/ti/ccs1250/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h:
 

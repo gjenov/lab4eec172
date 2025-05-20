@@ -10,11 +10,17 @@ GEN_OPTS__FLAG :=
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
+"./Adafruit_GFX.obj" \
+"./Adafruit_OLED.obj" \
+"./gpio.obj" \
 "./gpio_if.obj" \
 "./main.obj" \
 "./network_common.obj" \
+"./oled_test.obj" \
 "./pinmux.obj" \
 "./startup_ccs.obj" \
+"./systick_if.obj" \
+"./timer_if.obj" \
 "./uart_if.obj" \
 "./utils/network_utils.obj" \
 "../cc3200v1p32.cmd" \
@@ -151,8 +157,8 @@ aws-rest-api-ssl-demo.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "gpio_if.obj" "main.obj" "network_common.obj" "pinmux.obj" "startup_ccs.obj" "uart_if.obj" "utils\network_utils.obj" 
-	-$(RM) "gpio_if.d" "main.d" "network_common.d" "pinmux.d" "startup_ccs.d" "uart_if.d" "utils\network_utils.d" 
+	-$(RM) "Adafruit_GFX.obj" "Adafruit_OLED.obj" "gpio.obj" "gpio_if.obj" "main.obj" "network_common.obj" "oled_test.obj" "pinmux.obj" "startup_ccs.obj" "systick_if.obj" "timer_if.obj" "uart_if.obj" "utils\network_utils.obj" 
+	-$(RM) "Adafruit_GFX.d" "Adafruit_OLED.d" "gpio.d" "gpio_if.d" "main.d" "network_common.d" "oled_test.d" "pinmux.d" "startup_ccs.d" "systick_if.d" "timer_if.d" "uart_if.d" "utils\network_utils.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 
