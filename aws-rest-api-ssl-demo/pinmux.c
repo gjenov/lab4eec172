@@ -62,19 +62,69 @@ PinMuxConfig(void)
     MAP_PRCMPeripheralClkEnable(PRCM_GPIOA3, PRCM_RUN_MODE_CLK);
     MAP_PRCMPeripheralClkEnable(PRCM_UARTA0, PRCM_RUN_MODE_CLK);
 
+
+    PRCMPeripheralClkEnable(PRCM_GPIOA1, PRCM_RUN_MODE_CLK);
+    PRCMPeripheralClkEnable(PRCM_UARTA0, PRCM_RUN_MODE_CLK);
+
+    PRCMPeripheralClkEnable(PRCM_GPIOA0, PRCM_RUN_MODE_CLK);
+
+    PRCMPeripheralClkEnable(PRCM_GPIOA3, PRCM_RUN_MODE_CLK);
+    PRCMPeripheralClkEnable(PRCM_GSPI, PRCM_RUN_MODE_CLK);
+
     //
     // Configure PIN_64 for GPIOOutput
     //
     MAP_PinTypeGPIO(PIN_64, PIN_MODE_0, false);
     MAP_GPIODirModeSet(GPIOA1_BASE, 0x2, GPIO_DIR_MODE_OUT);
 
-    //
-    // Configure PIN_02 for GPIOOutput
-    //
-    MAP_PinTypeGPIO(PIN_02, PIN_MODE_0, false);
-    MAP_GPIODirModeSet(GPIOA1_BASE, 0x8, GPIO_DIR_MODE_OUT);
 
+    //
+    // Configure PIN_01 for GPIO Output
+    //
+    PinTypeGPIO(PIN_01, PIN_MODE_0, false);
+    GPIODirModeSet(GPIOA1_BASE, 0x4, GPIO_DIR_MODE_OUT);
 
+    //
+    // Configure PIN_02 for GPIO Output
+    //
+    PinTypeGPIO(PIN_02, PIN_MODE_0, false);
+    GPIODirModeSet(GPIOA1_BASE, 0x8, GPIO_DIR_MODE_OUT);
+
+    //
+    // Configure PIN_03 for GPIO Output
+    //
+    PinTypeGPIO(PIN_03, PIN_MODE_0, false);
+    GPIODirModeSet(GPIOA1_BASE, 0x10, GPIO_DIR_MODE_OUT);
+
+    //
+    // Configure PIN_18 for GPIO IN
+    //
+    PinTypeGPIO(PIN_18, PIN_MODE_0, false);
+    GPIODirModeSet(GPIOA3_BASE, 0x10, GPIO_DIR_MODE_IN);
+
+    // Configure PIN_50 for SPI0 GSPI_CS
+    //
+    PinTypeSPI(PIN_50, PIN_MODE_9);
+
+    //
+    // Configure PIN_05 for SPI0 GSPI_CLK
+    //
+    PinTypeSPI(PIN_05, PIN_MODE_7);
+
+    //
+    // Configure PIN_07 for SPI0 GSPI_MOSI
+    //
+    PinTypeSPI(PIN_07, PIN_MODE_7);
+
+    //
+    // Configure PIN_61 for UART0 UART0_RTS
+    //
+    PinTypeUART(PIN_61, PIN_MODE_5);
+
+    //
+    // Configure PIN_50 for UART0 UART0_CTS
+    //
+    PinTypeUART(PIN_50, PIN_MODE_12);
 
     //
     // Configure PIN_55 for UART0 UART0_TX
@@ -85,6 +135,12 @@ PinMuxConfig(void)
     // Configure PIN_57 for UART0 UART0_RX
     //
     MAP_PinTypeUART(PIN_57, PIN_MODE_3);
+
+    // Configure for UART 1 TX
+    PinTypeUART(PIN_16, PIN_MODE_2);
+
+    // Configure for UART 2 RX
+    PinTypeUART(PIN_45, PIN_MODE_2);
 
 
 }

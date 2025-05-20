@@ -104,17 +104,7 @@
 #define CLHEADER1 "Content-Length: "
 #define CLHEADER2 "\r\n\r\n"
 
-#define DATA1 "{" \
-            "\"state\": {\r\n"                                              \
-                "\"desired\" : {\r\n"                                       \
-                    "\"var\" :\""                                           \
-                        "Hello phone, "                                     \
-                        "message from CC3200 via AWS IoT!"                  \
-                        "\"\r\n"                                            \
-                "}"                                                         \
-            "}"                                                             \
-        "}\r\n\r\n"
-
+char DATA1[512];
 
 //*****************************************************************************
 //                 GLOBAL VARIABLES -- Start
@@ -227,6 +217,14 @@ void main() {
     // initialize global default app configuration
     g_app_config.host = SERVER_NAME;
     g_app_config.port = GOOGLE_DST_PORT;
+
+    //do IR HERE
+
+    const char* dynamicMessage = "Hello from main!";
+    strcpy(DATA1, "{\"state\":{\"desired\":{\"var\":\"");
+    strcat(DATA1, dynamicMessage);
+    strcat(DATA1, "\"}}}");
+
 
     //Connect the CC3200 to the local access point
     lRetVal = connectToAccessPoint();
