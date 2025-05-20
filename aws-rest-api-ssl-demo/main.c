@@ -86,7 +86,7 @@
 #define DATE                19    /* Current Date */
 #define MONTH               5     /* Month 1-12 */
 #define YEAR                2025  /* Current year */
-#define HOUR                10    /* Time - hours */
+#define HOUR                20    /* Time - hours */
 #define MINUTE              21    /* Time - minutes */
 #define SECOND              0     /* Time - seconds */
 
@@ -298,14 +298,14 @@ static int http_post(int iTLSSockID){
     if(lRetVal < 0) {
         UART_PRINT("POST failed. Error Number: %i\n\r",lRetVal);
         sl_Close(iTLSSockID);
-        GPIO_IF_LedOn(MCU_RED_LED_GPIO);
+        //GPIO_IF_LedOn(MCU_RED_LED_GPIO);
         return lRetVal;
     }
     lRetVal = sl_Recv(iTLSSockID, &acRecvbuff[0], sizeof(acRecvbuff), 0);
     if(lRetVal < 0) {
         UART_PRINT("Received failed. Error Number: %i\n\r",lRetVal);
         //sl_Close(iSSLSockID);
-        GPIO_IF_LedOn(MCU_RED_LED_GPIO);
+        //GPIO_IF_LedOn(MCU_RED_LED_GPIO);
            return lRetVal;
     }
     else {
